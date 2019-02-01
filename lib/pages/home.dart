@@ -24,7 +24,17 @@ class _HomePageState extends State<HomePage> {
         color: Colors.black54,
         height: MediaQuery.of(context).size.height - 80,
         child: Center(
-          child: Text('Nosso app de exemplo', style: TextStyle(color: Colors.white)),
+          child: Column(
+            children: <Widget>[
+              SizedBox(height: 100),
+              Text('Thizer Tips \'n Tricks', style: TextStyle(color: Colors.white, fontSize: 24)),
+              SizedBox(height: 15),
+              ClipRRect(
+                borderRadius: BorderRadius.circular(15),
+                child: Image.asset('assets/images/logo-sem-fundo.png', scale: 1.5),
+              )
+            ],
+          )
         ),
       ),
     );
