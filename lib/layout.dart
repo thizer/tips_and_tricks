@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'pages/home.dart';
 import 'pages/ListViewHor.dart';
+import 'pages/ListViewSlide.dart';
 import 'pages/tabbar.dart';
 
 class Layout {
@@ -32,6 +33,13 @@ class Layout {
               title: Text('ListView Horizontal'),
               onTap: () {
                 Navigator.of(context).pushNamed(ListViewHor.tag);
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.arrow_right),
+              title: Text('ListView Slide'),
+              onTap: () {
+                Navigator.of(context).pushNamed(ListViewSlide.tag);
               },
             ),
             ListTile(

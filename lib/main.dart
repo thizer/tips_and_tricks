@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'pages/home.dart';
 import 'pages/ListViewHor.dart';
+import 'pages/ListViewSlide.dart';
 import 'pages/tabbar.dart';
 
 void main() => runApp(MyApp());
@@ -11,6 +12,7 @@ class MyApp extends StatelessWidget {
   final routes = <String, WidgetBuilder> {
     HomePage.tag: (context) => HomePage(),
     ListViewHor.tag: (context) => ListViewHor(),
+    ListViewSlide.tag: (context) => ListViewSlide(),
     TabBarPage.tag: (context) => TabBarPage(),
   };
 
