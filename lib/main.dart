@@ -4,6 +4,7 @@ import 'pages/home.dart';
 import 'pages/ListViewHor.dart';
 import 'pages/ListViewSlide.dart';
 import 'pages/tabbar.dart';
+import 'pages/DragNDropPage.dart';
 
 void main() => runApp(MyApp());
 
@@ -14,6 +15,7 @@ class MyApp extends StatelessWidget {
     ListViewHor.tag: (context) => ListViewHor(),
     ListViewSlide.tag: (context) => ListViewSlide(),
     TabBarPage.tag: (context) => TabBarPage(),
+    DragNDropPage.tag: (context) => DragNDropPage(),
   };
 
   @override

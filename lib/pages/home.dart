@@ -21,13 +21,13 @@ class _HomePageState extends State<HomePage> {
 
     var content = SingleChildScrollView(
       child: Container(
-        color: Colors.black54,
+        color: Colors.black12,
         height: MediaQuery.of(context).size.height - 80,
         child: Center(
           child: Column(
             children: <Widget>[
               SizedBox(height: 100),
-              Text('Thizer Tips \'n Tricks', style: TextStyle(color: Colors.white, fontSize: 24)),
+              Text('Tips \'n Tricks', style: TextStyle(color: Colors.black, fontSize: 24)),
               SizedBox(height: 15),
               ClipRRect(
                 borderRadius: BorderRadius.circular(15),

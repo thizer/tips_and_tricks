@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tips_and_tricks/pages/DragNDropPage.dart';
 
 import 'pages/home.dart';
 import 'pages/ListViewHor.dart';
@@ -49,11 +50,18 @@ class Layout {
                 Navigator.of(context).pushNamed(TabBarPage.tag);
               },
             ),
+            ListTile(
+              leading: Icon(Icons.arrow_right),
+              title: Text('Drag \'n Drop'),
+              onTap: () {
+                Navigator.of(context).pushNamed(DragNDropPage.tag);
+              },
+            ),
           ],
         ),
       ),
       appBar: AppBar(
-        title: Text('My App'),
+        title: Text('Thizer'),
       ),
       body: content
     );
